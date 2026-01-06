@@ -33,7 +33,6 @@ body {
     padding-bottom: 90px;
 }
 
-/* ===== HEADER ===== */
 .search-header {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     padding: 35px 25px;
@@ -60,7 +59,6 @@ body {
     color: #fde047;
 }
 
-/* ===== LAYOUT ===== */
 .main-content {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -70,7 +68,6 @@ body {
     padding: 0 20px;
 }
 
-/* ===== SIDEBAR FILTER ===== */
 .filters-sidebar {
     background: #fff;
     padding: 22px;
@@ -100,7 +97,6 @@ body {
     cursor: pointer;
 }
 
-/* ===== GRID PRODUK ===== */
 .product-grid {
     list-style: none;
     display: grid;
@@ -108,7 +104,6 @@ body {
     gap: 28px;
 }
 
-/* ===== CARD PRODUK ===== */
 .product-card {
     background: #fff;
     border-radius: 18px;
@@ -139,7 +134,6 @@ body {
     transform: scale(1.1);
 }
 
-/* ===== BADGE & WISHLIST ===== */
 .discount-badge {
     position: absolute;
     top: 12px;
@@ -248,7 +242,6 @@ body {
 
 <body>
 
-<!-- Header Hasil Pencarian -->
 <header class="search-header">
     <button class="back-button" onclick="history.back()">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -261,9 +254,8 @@ body {
     </div>
 </header>
 
-<!-- Konten Utama: Sidebar Filter + Grid Produk -->
 <div class="main-content">
-    <!-- Sidebar Filter -->
+
     <aside class="filters-sidebar">
         <div class="filter-group">
             <h3>Kategori</h3>
@@ -292,7 +284,6 @@ body {
         </div>
     </aside>
 
-    <!-- Grid Hasil Produk -->
     <section class="results-section">
         {% if results %}
             <ul class="product-grid">
@@ -333,7 +324,6 @@ body {
     </section>
 </div>
 
-<!-- Bottom Navigation -->
 <nav id="bottom-nav">
     <ul>
         <li><a href="/">
@@ -356,4 +346,5 @@ body {
 </nav>
 
 </body>
+
 </html>
